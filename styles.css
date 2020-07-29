@@ -1,3 +1,10 @@
+html, body {
+    min-height:100%;
+  }
+
+  body {
+      background: url('./wall.jpg') repeat;
+  }
 
 .drawn-button {
     /* ripped off bootstrap for now */
@@ -35,27 +42,9 @@ ul,li{
     display: block;
   }
 
-
-  span.insta {
-      width: 50px;
-      height: 50px;
-      display: block;
-      background-size: contain;
-      background-image: url('./instagram.png');
-      background-position: 0 0;
-      background-repeat: no-repeat;
-  }
-
-  span.fbicon {
-    width: 50px;
-    height: 50px;
-    display: block;
-    background-size: contain;
-    background-image: url('./facebook.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
+span.linktext {
+    margin: auto;
 }
-
 
 
 .pin-board {
@@ -63,12 +52,18 @@ ul,li{
     background-position: 0 0;
     background-repeat: repeat;
 
+    margin: 10%;
+
+    -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 20px 20px rgba(0,0,0,.3);
+    box-shadow: 0 0 20px 20px rgba(0,0,0,.3);
+
 }
 
 .social-links a {
     color: inherit;
-/*    font-family: 'Cabin Sketch', cursive;*/
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Cabin Sketch', cursive;
+/*    font-family: 'Indie Flower', cursive;*/
     font-size: 30px;
     font-weight: normal;
 }
@@ -107,7 +102,7 @@ a.polaroid:after {
 }
 
 a.postit {
-
+    text-align: center;
     text-decoration:none;
     /*color:rgba(222, 105, 105, 0.945);*/
     background:#ffc;
@@ -115,7 +110,7 @@ a.postit {
     height:5em;
     width:5em;
     padding:1em;
-    margin: 30px;
+    margin: 0px;
     /* Firefox */
     -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
     /* Safari+Chrome */
@@ -123,8 +118,20 @@ a.postit {
     /* Opera */
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   }
-
-  
+.pin {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url('./pin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+}
+.polaroid .pin {
+    top: 0px;
+}  
 .social-links li:nth-child(2n)
 {
     -webkit-transform: rotate(4deg);  
@@ -152,3 +159,59 @@ a.postit {
     transform: rotate(-18deg); 
     color:rgb(68, 16, 114);
 }
+
+.social-links .facebook
+{
+    color:#385898;
+}
+
+.social-links .twitter
+{
+    color: #00aced;
+}
+
+.social-links .spotify {
+    color: #1DB954;
+}
+
+.social-links .youtube {
+    color: #FF0000;
+}
+.social-links .soundcloud {
+    color: #FF7700;
+}
+
+span.icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.instagram .icon {
+      background-image: url('./instagram.png');
+  }
+
+.facebook .icon {
+    background-image: url('./facebook.png');
+}
+
+.twitter .icon {
+    background-image: url('./twitter.png');
+}
+.spotify .icon {
+    background-image: url('./spotify.png');
+}
+.soundcloud .icon {
+    background-image: url('./soundcloud.png');
+}
+.bandcamp .icon {
+    background-image: url('./bandcamp.png');
+}
+.youtube .icon {
+    background-image: url('./youtube.png');
+}
+
