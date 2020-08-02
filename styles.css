@@ -4,7 +4,7 @@ body {
 }
 
 body {
-    background: url('./wall.jpg') repeat;
+    background: url('./images/wall.jpg') repeat;
 }
 
 ul,
@@ -29,7 +29,7 @@ span.linktext {
 
 
 .pin-board {
-    background-image   : url('./cork.jpg');
+    background-image   : url('./images/cork.jpg');
     background-position: 0 0;
     background-repeat  : repeat;
 
@@ -104,7 +104,7 @@ a.postit {
     width            : 30px;
     height           : 30px;
     display          : block;
-    background-image : url('./pin.png');
+    background-image : url('./images/pin.png');
     background-size  : contain;
     background-repeat: no-repeat;
     position         : absolute;
@@ -175,29 +175,29 @@ span.icon {
 }
 
 .instagram .icon {
-    background-image: url('./instagram.png');
+    background-image: url('./icons/instagram.png');
 }
 
 .facebook .icon {
-    background-image: url('./facebook.png');
+    background-image: url('./icons/facebook.png');
 }
 
 .twitter .icon {
-    background-image: url('./twitter.png');
+    background-image: url('./icons/twitter.png');
 }
 
 .spotify .icon {
-    background-image: url('./spotify.png');
+    background-image: url('./icons/spotify.png');
 }
 
 .soundcloud .icon {
-    background-image: url('./soundcloud.png');
+    background-image: url('./icons/soundcloud.png');
 }
 
 .bandcamp .icon {
-    background-image: url('./bandcamp.png');
+    background-image: url('./icons/bandcamp.png');
 }
 
 .youtube .icon {
-    background-image: url('./youtube.png');
+    background-image: url('./icons/youtube.png');
 }
