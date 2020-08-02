@@ -130,7 +130,7 @@ a.postit {
     color            : rgb(75, 89, 237);
 }
 
-.social-links li:nth-child(4n) {
+.social-links li:nth-child(7n) {
     -webkit-transform: rotate(14deg);
     -moz-transform   : rotate(14deg);
     transform        : rotate(14deg);
